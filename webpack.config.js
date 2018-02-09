@@ -9,7 +9,7 @@ module.exports = (env) => {
     return {
         entry: path.resolve(__dirname, './src/app.js'),
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         // webpack tool to use babel inside a webpack
@@ -48,7 +48,8 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map': 'inline-source-map', // DEV TOOLS SOURCE PACK FROM WEBPACK, IT EXACTLY SHOWS THE POSITION OF THE ERROR IN A BABEK ENV(IN ES6 FILE NOT IN ES5)
         devServer: {
             historyApiFallback: true , // for client side routing
-            contentBase: path.join(__dirname, 'public') // IT IS MUCH FASTER AS IT CREATES A COPY OF THE CODE IT WILL SERVE
+            contentBase: path.join(__dirname, 'public'), // IT IS MUCH FASTER AS IT CREATES A COPY OF THE CODE IT WILL SERVE
+            publicPath: '/dist/'
         }
     }
 }
