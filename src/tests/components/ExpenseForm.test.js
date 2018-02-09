@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import { shallow } from 'enzyme';
 import toJSON from "enzyme-to-json";
-import { expenses } from '../../fixtures/expenses';
+import { expenses } from '../fixtures/expenses';
 import ExpenseForm from '../../components/ExpenseForm';
 
 test('should render ExpenseForm correctly', () => {

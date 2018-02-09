@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJSON from "enzyme-to-json";
-import { expenses }  from '../../fixtures/expenses';
+import { expenses }  from '../fixtures/expenses';
 import { ExpenseListItem } from '../../components/ExpenseListItem';
 
 test('should render Expense list item correctly', () => {

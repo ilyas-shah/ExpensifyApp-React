@@ -1,6 +1,6 @@
 import selectExpenses from '../../selectors/expenses';
 import moment from 'moment';
-import {expenses} from '../../fixtures/expenses';
+import {expenses} from '../fixtures/expenses';
 
 test('should filter the expenses by text', () => {
     const filters = {

@@ -2,7 +2,7 @@ import React from 'react';
 import moment from '../__mocks__/moment';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import { filters, altFilters } from '../../fixtures/filters';
+import { filters, altFilters } from '../fixtures/filters';
 import { ExpenseListFilters } from '../../components/ExpenseListFilters';
 
 let setTextFilter, setStartDate, setEndDate, sortByAmount, sortByDate, wrapper
