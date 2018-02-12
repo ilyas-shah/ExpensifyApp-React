@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import store from './store/configureStore';
+import '../firebase/firebase';
 import {addExpense, removeExpense, editExpense} from './actions/expenses';
 import {setTextFilter, setStartDate, setEndDate} from './actions/filters';
 import expenseReducer from './reducers/expenses';
