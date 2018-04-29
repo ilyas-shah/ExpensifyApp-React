@@ -1,4 +1,4 @@
 FROM node:latest
 RUN npm install
-CMD [ "node", "server/server.js" ]
+CMD [ "npm start" ]
 EXPOSE 3050
